@@ -45,6 +45,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { InputAngularMaterialComponent } from './components/input-angular-material/input-angular-material.component';
+import { TableAngularMaterialComponent } from './components/table-angular-material/table-angular-material.component';
 
 @NgModule({
   exports: [
@@ -81,14 +82,16 @@ import { InputAngularMaterialComponent } from './components/input-angular-materi
     MatTabsModule,
     MatToolbarModule,
     MatTooltipModule
-  ]
+  ],
+  declarations: []
 })
 export class DemoMaterialModule {}
 
 @NgModule({
   declarations: [
       AppComponent,
-      InputAngularMaterialComponent
+      InputAngularMaterialComponent,
+      TableAngularMaterialComponent
   ],
   imports: [
       BrowserModule,
